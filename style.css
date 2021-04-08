@@ -95,6 +95,25 @@ header .logo {
   position: relative;
   z-index: 10;
   color: #fff;
+  position: -200%;
+  opacity: 0;
+  transform: translateX(-200%);
+  animation: animateText 1.8s ease-in-out forwards;
+}
+
+@keyframes animateText {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .text h2 {
